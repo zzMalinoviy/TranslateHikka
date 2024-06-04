@@ -1,8 +1,9 @@
 import asyncio
 from googletrans import Translator
+from hikka import hikka
 
 
-@Hikka.on_message(hikka.on_cmd_prefix('trn'))
+@hikka.on_message(hikka.on_cmd_prefix('trn'))
 async def translate_message(event):
     text_to_translate = event.text.split()
 
